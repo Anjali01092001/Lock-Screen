@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    z-index: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.buttonpop {
+    margin-left: -5px;
+    height: 45.8rem;
+    width: 94rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    padding: 2rem;
 }
-
-.App-link {
-  color: #61dafb;
+.top-left:hover {
+    cursor: pointer;
+    background-color: rgba(9, 9, 9, 0.74);
+    border-radius: 1rem;
 }
+.top-left:hover::after {
+    content: "Then again,it usually makes the sipping"
+}
+.search {
+    height: 30px;
+    border-radius: 7px;
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    padding: 2rem;
+}
+.top-right:hover {
+    cursor: pointer;
+    background-color: rgba(9, 9, 9, 0.74);
+    border-radius: 1rem;
+}
+.camera {
+    height: 30px;
+    border-radius: 6px;
+}
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.centered {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.center2 {
+    margin-top: -4rem;
+}
+.blurbg {
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    height: 100%;
+    z-index: 2;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.userlogin {
+    margin-top: -40rem;
+    z-index: 6;
+    position: absolute;
+    margin-left: 35rem;
+}
+.userlogo{
+    box-shadow: 5px 10px 5px 5px #1211113c;
+}
+input {
+    padding: 6px 12px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #ffffff67;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
